@@ -47,7 +47,7 @@
 	Dialog.prototype={
 		_bindEvent:function(){
 			var self=this;
-			self.button.on("tap",function(){
+			self.button.on("click",function(){
 				var index=$(self.button).index($(this));
 				// self.option.callback("button",index);
 				var e=$.Event("dialog:action");
